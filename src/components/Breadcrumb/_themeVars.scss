@@ -1,0 +1,24 @@
+$breadcrumb-link-color: --breadcrumb-link-color;
+$breadcrumb-hover-color: --breadcrumb-hover-color;
+$breadcrumb-selected-color: --breadcrumb-selected-color;
+$breadcrumb-icon-color: --breadcrumb-icon-color;
+$breadcrumb-tooltip-bkg-color: --breadcrumb-tooltip-bkg-color;
+$breadcrumb-tooltip-text-color: --breadcrumb-tooltip-text-color;
+
+$theme-map-dark: (
+    $breadcrumb-link-color: $white-70,
+    $breadcrumb-hover-color: $primary-82,
+    $breadcrumb-selected-color: $primary-82,
+    $breadcrumb-icon-color: $white-38,
+    $breadcrumb-tooltip-bkg-color : $black-94,
+    $breadcrumb-tooltip-text-color : $white-94,
+);
+
+$theme-map-light: (
+    $breadcrumb-link-color: $black-70,
+    $breadcrumb-hover-color: $primary-46,
+    $breadcrumb-selected-color: $primary-46,
+    $breadcrumb-icon-color: $black-38,
+    $breadcrumb-tooltip-bkg-color : $white-94,
+    $breadcrumb-tooltip-text-color : $black-94,
+);

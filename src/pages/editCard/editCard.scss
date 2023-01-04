@@ -1,0 +1,13 @@
+.edit-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 8px;
+  position: relative;
+
+  .card {
+    margin: 4px;
+    width: calc(25vw - 24px);
+    transition: 0.15s all ease-in-out;
+  }
+}

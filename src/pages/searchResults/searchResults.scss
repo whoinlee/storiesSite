@@ -1,0 +1,53 @@
+@import "../../mixins.scss";
+
+/* [data-theme="dark"] {
+  .search-results-page {
+    img {
+      filter: invert(1);
+    }
+  }
+} */
+
+.search-results-page {
+  h1 {
+    span {
+      font-weight: 400 !important;
+    }
+  }
+
+  .empty-search {
+    img {
+      height: 20px;
+      width: auto;
+    }
+  }
+
+  .center-all {
+    flex-direction: column;
+    height: calc(100vh - 60px);
+
+    h5 {
+      margin: 20px auto;
+    }
+  }
+
+  .results-container {
+    @include flex();
+    align-items: flex-start;
+
+    .filters-panel {
+      /* width: 25vw;
+      max-width: 400px;
+      min-width: 120px; */
+      button {
+        margin-top: 10px;
+        width: 100% !important;
+      }
+    }
+
+    .search-results {
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+}

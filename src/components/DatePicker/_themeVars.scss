@@ -1,0 +1,68 @@
+$date-picker-hover-color: --date-picker-hover-color;
+$date-picker-selected-color: --date-picker-selected-color;
+$date-picker-label-color: --date-picker-label-color;
+$date-picker-input-bkg-color: --date-picker-input-bkg-color;
+$date-picker-input-bkg-hover-color: --date-picker-input-bkg-hover-color;
+$date-picker-input-text-color: --date-picker-input-text-color;
+$date-picker-input-border-bottom-color: --date-picker-input-border-bottom-color;
+$date-picker-input-typing-bkg-color: --date-picker-input-typing-bkg-color;
+$date-picker-input-typing-color: --date-picker-input-typing-color;
+$date-picker-input-disabled-color: --date-picker-input-disabled-color;
+$date-picker-input-error-color: --date-picker-input-error-color;
+$date-picker-input-error-bkg-color: --date-picker-input-error-bkg-color;
+$date-picker-calendar-bkg-color: --date-picker-calendar-bkg-color;
+$date-picker-calendar-title-color: --date-picker-calendar-title-color;
+$date-picker-calendar-header-icon-color: --date-picker-calendar-header-icon-color;
+$date-picker-week-text-color: --date-picker-week-text-color;
+$date-picker-day-text-color: --date-picker-day-text-color;
+$date-picker-day-border-color: --date-picker-day-border-color;
+$date-picker-day-disabled-text-color: --date-picker-day-disabled-text-color;
+$date-picker-day-readonly-text-color: --date-picker-day-readonly-text-color;
+$date-picker-day-readonly-border-color: --date-picker-day-readonly-border-color;
+
+$theme-map-dark: (
+    $date-picker-hover-color: $primary-75,
+    $date-picker-selected-color: $primary-75,
+    $date-picker-label-color: $secondary-98,
+    $date-picker-input-bkg-color: $white-06,
+    $date-picker-input-bkg-hover-color: $white-10,
+    $date-picker-input-text-color: $white-94,
+    $date-picker-input-border-bottom-color: $white-64,
+    $date-picker-input-typing-color: $white-64,
+    $date-picker-input-disabled-color: $white-50,
+    $date-picker-input-error-color: $critical-80,
+    $date-picker-input-error-bkg-color: $critical-66-30,
+    $date-picker-calendar-bkg-color: $white-10,
+    $date-picker-calendar-title-color: $primary-82,
+    $date-picker-calendar-header-icon-color: $white-70,
+    $date-picker-week-text-color: $white-64,
+    $date-picker-day-text-color: $secondary-98,
+    $date-picker-day-border-color: $secondary-98,
+    $date-picker-day-disabled-text-color: $white-50,
+    $date-picker-day-readonly-text-color: $white-94,
+    $date-picker-day-readonly-border-color: $white-84,
+);
+
+$theme-map-light: (
+    $date-picker-hover-color: $primary-69,
+    $date-picker-selected-color: $primary-69,
+    $date-picker-label-color: $black-94,
+    $date-picker-input-text-color: $black-94,
+    $date-picker-input-bkg-color: $black-06,
+    $date-picker-input-bkg-hover-color: $black-10,
+    $date-picker-input-border-bottom-color: $black-64,
+    $date-picker-input-typing-color: $black-64,
+    $date-picker-input-typing-bkg-color: $black-10,
+    $date-picker-input-disabled-color: $black-50,
+    $date-picker-input-error-color: $critical-30,
+    $date-picker-input-error-bkg-color: $critical-66-20,
+    $date-picker-calendar-bkg-color: $white-100,
+    $date-picker-calendar-title-color: $primary-46,
+    $date-picker-calendar-header-icon-color: $black-70,
+    $date-picker-week-text-color: $black-64,
+    $date-picker-day-text-color: $black-94,
+    $date-picker-day-border-color: $black-94,
+    $date-picker-day-disabled-text-color: $black-50,
+    $date-picker-day-readonly-text-color: $black-94,
+    $date-picker-day-readonly-border-color: $black-84,
+);

@@ -1,0 +1,148 @@
+.designs-detail {
+  .drop-down {
+    cursor: pointer;
+    min-width: 200px;
+    text-align: right;
+
+    ul {
+      height: fit-content;
+      padding: 5px 0;
+      transition: 0.25s opacity ease-in-out;
+      opacity: 1;
+      margin: 11px 0 0;
+      list-style: none;
+      background-color: var(--form-control-background-absolute);
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+
+      &.hide {
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      li {
+        padding: 5px 10px;
+        height: 30px;
+        cursor: pointer;
+        text-align: left;
+
+        &.meta {
+          border-top: 1px solid var(--form-control-background-hover);
+          height: fit-content;
+          cursor: initial;
+          opacity: 0.5;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        &:hover {
+          background-color: var(--form-control-background-hover);
+        }
+      }
+    }
+  }
+
+  .link {
+    cursor: pointer;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    a {
+      min-width: 200px;
+      text-align: left;
+      margin-left: 2.5px;
+    }
+
+    background-color: var(--nav-background);
+
+    img {
+      height: 16px;
+      width: auto;
+    }
+  }
+
+  .meta {
+    font-size: 12px;
+
+    span {
+      margin-right: 7.5px;
+
+      a {
+        font-weight: 600;
+        &:hover {
+          color: var(--primary-font-color);
+        }
+      }
+    }
+  }
+
+  .slides {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    overflow: auto;
+    padding: 15px;
+
+    &.Vertical {
+      background-color: black;
+      flex-direction: column;
+
+      .slide {
+        display: flex;
+        flex-flow: row-reverse;
+
+        margin-right: 0;
+        margin-bottom: 40px;
+
+        img {
+          width: 80vw;
+          padding-left: 15px;
+          height: auto;
+        }
+
+        .caption {
+          width: 20vw;
+          padding: 15px;
+          position: relative;
+          height: fit-content;
+        }
+      }
+    }
+
+    .slide {
+      margin-right: 30px;
+      position: relative;
+
+      .caption {
+        white-space: pre-line;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--background);
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 13px;
+      }
+
+      img {
+        height: calc(100% - 40px);
+      }
+    }
+  }
+}

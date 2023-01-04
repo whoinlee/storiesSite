@@ -1,0 +1,28 @@
+.button-group {
+  display: flex;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: var(--button-font-color-secondary);
+    background-color: var(--button-background-secondary);
+    padding: 5px 15px;
+    font-weight: 600;
+    margin: 1px;
+    width: 150px;
+    cursor: pointer;
+
+    &.active {
+      background-color: var(--button-background-primary);
+    }
+
+    &:first-child {
+      border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}

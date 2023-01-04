@@ -1,0 +1,30 @@
+//-- particle typography variables
+$particle-fallback-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//-- particle spacing variables
+$particle-spacing-1x: 4px;
+$particle-spacing-2x: 8px;
+$particle-spacing-3x: 12px;
+
+//-- particle color variables
+$white-94: rgba(white, .94);
+$white-70: rgba(white, .70);
+$white-64: rgba(white, .64);
+$white-38: rgba(white, .38);
+//
+$black-94: rgba(black, .94); 
+$black-70: rgba(black, .70); 
+$black-64: rgba(black, .64); 
+$black-38: rgba(black, .38);
+$black-30: rgba(black, .30);
+//
+$primary-82: #BCA3FF;   //for dark theme
+$primary-46: #5D40AC;   //for light theme
+
+//-- particle radius variable
+$particle-radius-default: 3px;
+
+//-- particle motion variable
+$particle-duration-fast: 100ms;
+$particle-duration-lazy: 400ms;
+$particle-easing-standard: cubic-bezier(0.4,0,0.2,1);

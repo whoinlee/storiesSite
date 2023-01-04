@@ -1,0 +1,119 @@
+@import '../../mixins.scss';
+
+.designs {
+  h5 {
+    margin: 0 0 2.5px;
+    font-weight: 500;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .logo {
+    width: 20px;
+    cursor: pointer;
+  }
+  .search-container {
+    max-width: 300px;
+
+    .search {
+      background-color: transparent;
+      padding: 0;
+      input {
+        background-color: var(--form-control-background);
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .filter-icon {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.1s all ease-in;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .page-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .filters {
+      background-color: var(--background);
+      width: 0;
+      opacity: 0;
+      transition: 0.25s all ease-in;
+      margin-top: 10px;
+
+      .full-filter {
+        width: 250px;
+        border: none;
+      }
+
+      &.expanded {
+        opacity: 1;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--form-control-background);
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: 0.25s all ease-in;
+    margin-left: 5px;
+
+    &.compressed {
+      width: calc(100% - 250px);
+    }
+  }
+
+  .projects {
+    width: calc(25vw - 30px);
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--form-control-background);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+
+    &:hover {
+      background-color: var(--form-control-background-hover);
+    }
+
+    h5,
+    span,
+    .meta {
+      margin-left: 5px;
+      line-height: 1.25;
+    }
+
+    .meta {
+      margin-top: 2.5px;
+      font-size: 0.75em;
+      line-height: 1.5;
+      h5 {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 5px;
+    }
+  }
+}

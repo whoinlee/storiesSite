@@ -1,0 +1,18 @@
+.highcharts-tooltip > span,
+.highcharts-tooltip div {
+  background: var(--hc-tooltip-background);
+  padding: 5px;
+}
+
+.highcharts-tooltip {
+  border-radius: 5px;
+  text,
+  div,
+  span {
+    color: var(--font-color) !important;
+  }
+}
+
+.highcharts-graph {
+  //stroke: var(--primary-font-color);
+}

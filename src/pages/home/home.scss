@@ -1,0 +1,14 @@
+.home {
+  table {
+    width: 100%;
+  }
+  td,
+  th {
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--list-border-color);
+    a {
+      display: flex;
+      padding: 10px 0;
+    }
+  }
+}

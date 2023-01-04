@@ -1,0 +1,43 @@
+//-- particle icon paths
+// $icon_base: "~@appd/ui-assets/inline-images/";
+// $calendar-icon-path: "#{$icon_base}actions/calendar.svg";
+// $error-icon-path: "#{$icon_base}status/error.svg";
+// $chevron-left-icon-path: "#{$icon_base}navigation/chevronLeft.svg";
+// $chevron-right-icon-path: "#{$icon_base}navigation/chevronRight.svg";
+
+//-- particle spacing variables
+$particle-spacing-1x: 4px;
+$particle-spacing-2x: 8px;
+$particle-spacing-3x: 12px;
+
+//-- particle color variables
+$white-100: white;
+$white-94: rgba(white, .94);
+$white-84: rgba(white, .84);
+$white-70: rgba(white, .70);
+$white-64: rgba(white, .64);
+$white-50: rgba(white, .50);
+$white-10: rgba(white, .10);
+$white-06: rgba(white, .06);
+//
+$black-94: rgba(black, .94);
+$black-84: rgba(black, .84);
+$black-70: rgba(black, .70);
+$black-64: rgba(black, .64); 
+$black-50: rgba(black, .50);
+$black-30: rgba(black, .30);
+$black-10: rgba(black, .10); 
+$black-06: rgba(black, .06);
+//
+$critical-80: #FB9D9F;
+$critical-74: #FA7A7E;
+$critical-66: #F9585C;
+$critical-66-30: rgba($critical-66, .30); 
+$critical-66-20: rgba($critical-66, .20);
+$critical-30: #94050A;
+$primary-46: #5D40AC;
+$primary-69: #8B61FF;
+$primary-75: #A280ff;
+$primary-82: #BCA3FF;
+$secondary-98: #F8F9FA;
+$secondary-23: #2D303E;

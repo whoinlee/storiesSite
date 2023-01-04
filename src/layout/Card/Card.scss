@@ -1,0 +1,113 @@
+@import "../../mixins.scss";
+
+[data-theme="light"] {
+  .card-container {
+    .card {
+      .card-header {
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  background-color: var(--modal-background);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.25s opacity ease-in-out;
+
+  &.animated {
+    opacity: 1;
+  }
+}
+
+.card-container {
+  position: relative;
+
+  .card {
+    background-color: var(--card-background);
+    border-radius: 6px;
+    width: 100%;
+    min-width: 300px;
+
+    .card-header {
+      font-size: 13px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      padding: 0 7.5px 0 15px;
+      @include flex();
+      font-weight: 500;
+      color: var(--link-color);
+      .actions {
+        @include flex();
+        justify-content: flex-end;
+
+        img {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0 15px 10px;
+    }
+
+    table {
+      table-layout: fixed;
+      width: 100%;
+
+      thead {
+        font-weight: 800;
+      }
+
+      tr {
+        //border-top: 1px solid var(--list-border-color);
+
+        td {
+          padding: 10px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .card.card-modal {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    background-color: var(--card-modal-background);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s opacity ease-in;
+
+    &.show {
+      opacity: 1;
+      visibility: unset;
+    }
+
+    .actions-footer {
+      @include flex();
+      justify-content: flex-end;
+      padding: 0 15px 15px;
+
+      .button {
+        margin-left: 10px;
+
+        &disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
